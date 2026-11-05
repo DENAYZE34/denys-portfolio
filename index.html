@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a192f">
+<title>Денис — веб-розробник для малого бізнесу в Одесі</title>
+<meta name="description" content="Роблю швидкі, доступні й справді робочі сайти для локального бізнесу. Кейс: повний редизайн сайту ремонту холодильників — 3 мови, WCAG AA, 36 статей, 0 биті посилання.">
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --navy:#0a192f; --navy-light:#112240; --slate:#8892b0; --lslate:#ccd6f6; --white:#e6f1ff;
+  --accent:#64ffda; --mono:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--slate);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+header.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;max-width:720px;margin:0 auto;padding:40px 24px}
+.kicker{color:var(--accent);font-family:var(--mono);font-size:15px;margin:0 0 16px}
+h1{color:var(--lslate);font-size:clamp(32px,6vw,56px);margin:0;font-weight:800;line-height:1.1}
+h2.sub{color:var(--slate);font-size:clamp(20px,4vw,38px);margin:8px 0 20px;font-weight:700}
+.lead{max-width:480px;font-size:17px}
+.social{display:flex;gap:18px;margin-top:28px}
+.social a{color:var(--slate);text-decoration:none;font-size:14px;border:1px solid #233554;padding:8px 14px;border-radius:6px;transition:.2s}
+.social a:hover{color:var(--accent);border-color:var(--accent)}
+section{max-width:720px;margin:0 auto;padding:60px 24px}
+.label{display:flex;align-items:center;gap:16px;color:var(--lslate);font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;font-family:var(--mono);margin-bottom:28px}
+.label::after{content:'';flex:1;height:1px;background:#233554}
+.label span.n{color:var(--accent)}
+p{margin:0 0 16px}
+.case{background:var(--navy-light);border-radius:14px;padding:28px;border:1px solid #1d2d50}
+.case img{width:100%;border-radius:10px;display:block;margin-bottom:20px;border:1px solid #233554}
+.case h3{color:var(--lslate);font-size:22px;margin:0 0 6px}
+.case .role{color:var(--accent);font-family:var(--mono);font-size:13px;margin-bottom:16px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin:22px 0}
+.metric{background:var(--navy);border-radius:10px;padding:16px;text-align:center;border:1px solid #1d2d50}
+.metric strong{display:block;color:var(--accent);font-size:24px;font-family:var(--mono)}
+.metric span{font-size:12px;color:var(--slate)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{font-family:var(--mono);font-size:12px;color:var(--accent);background:rgba(100,255,218,.08);padding:5px 12px;border-radius:999px}
+.case a.cta{display:inline-block;margin-top:20px;color:var(--accent);text-decoration:none;font-weight:700;border-bottom:1px solid var(--accent)}
+.pricing{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.price-card{background:var(--navy-light);border:1px solid #1d2d50;border-radius:12px;padding:22px}
+.price-card h4{color:var(--lslate);margin:0 0 6px;font-size:16px}
+.price-card .amount{color:var(--accent);font-size:28px;font-weight:800;font-family:var(--mono);margin:8px 0}
+.price-card p{font-size:14px;margin:0}
+footer{max-width:720px;margin:0 auto;padding:60px 24px 80px;text-align:center}
+footer h2{color:var(--lslate);font-size:clamp(26px,5vw,42px);margin:0 0 14px}
+footer p{max-width:420px;margin:0 auto 28px}
+.contact-btn{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:16px 32px;border-radius:6px;text-decoration:none;font-family:var(--mono);font-weight:700}
+.note{font-size:12px;color:#495670;margin-top:30px}
+.contact-list{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:26px;font-family:var(--mono);font-size:13px}
+.contact-list a{color:var(--slate);text-decoration:none}
+.contact-list a:hover{color:var(--accent)}
+@media (max-width:600px){.pricing{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="kicker">Привіт, мене звати</p>
+  <h1>Денис.</h1>
+  <h2 class="sub">Роблю сайти для малого бізнесу, які реально працюють.</h2>
+  <p class="lead">Веб-розробник в Одесі. Роблю сайти для місцевого сервісного бізнесу — майстерень, невеликих клінік, ремонтних компаній.</p>
+  <div class="social">
+    <a href="#case">Переглянути кейс ↓</a>
+    <a href="#contact">Зв'язатися →</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="label"><span class="n">01.</span> Про мене</h2>
+  <p>Пишу сайти сам, без агентства і без конструкторів. Останній проєкт — нижче, можна подивитись весь процес: з чого починав, що саме переробив і що вийшло в підсумку.</p>
+</section>
+
+<section id="case">
+  <h2 class="label"><span class="n">02.</span> Кейс</h2>
+  <div class="case">
+    <img src="assets/holodok-case.jpg" alt="Скріншот редизайну сайту Холод-ОК">
+    <p class="role">Повний редизайн · Статичний сайт · Без фреймворків</p>
+    <h3>Холод-ОК — ремонт холодильників, Одеса</h3>
+    <p>Сайт майстерні стояв на WordPress ще з 2017 року. Я переробив його в статичний сайт на трьох мовах і звірив з оригіналом кожну сторінку — щоб жодна стаття, форма чи відгук не загубилися при переносі. Додав SEO-розмітку, яку розуміють пошуковики, і прогнав готовий сайт через axe-core: знайшов і поправив три місця з заниженим контрастом тексту та кілька пропущених рівнів заголовків.</p>
+    <div class="metrics">
+      <div class="metric"><strong>3</strong><span>мови (uk/ru/en)</span></div>
+      <div class="metric"><strong>156</strong><span>сторінок згенеровано</span></div>
+      <div class="metric"><strong>36</strong><span>статей, паритет з оригіналом</span></div>
+      <div class="metric"><strong>0</strong><span>биті посилання</span></div>
+      <div class="metric"><strong>0</strong><span>порушень WCAG AA (axe-core)</span></div>
+    </div>
+    <div class="tags">
+      <span class="tag">HTML/CSS/JS</span>
+      <span class="tag">i18n архітектура</span>
+      <span class="tag">WCAG 2 AA</span>
+      <span class="tag">Schema.org JSON-LD</span>
+      <span class="tag">GitHub Pages</span>
+    </div>
+    <a class="cta" href="https://denayze34.github.io/holod-ok-redesign/" target="_blank" rel="noopener">Переглянути живий демо-сайт ↗</a>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="label"><span class="n">03.</span> Послуги та ціни</h2>
+  <div class="pricing">
+    <div class="price-card">
+      <h4>Редизайн сайту під ключ</h4>
+      <div class="amount">15 000 ₴</div>
+      <p>Повний редизайн і перенос на ваш домен: адаптивна верстка, SEO-база, без прихованих доплат.</p>
+    </div>
+    <div class="price-card">
+      <h4>Щомісячна підтримка</h4>
+      <div class="amount">1 000 ₴<span style="font-size:14px;color:var(--slate)">/міс</span></div>
+      <p>Дрібні правки, оновлення цін і статей, моніторинг, резервні копії.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <h2>Що далі?</h2>
+  <p>Є сайт, який давно пора оновити? Напишіть — подивлюсь і скажу чесно, чи варто.</p>
+  <a class="contact-btn" href="mailto:denayzeofficial@gmail.com">Написати листа</a>
+  <div class="contact-list">
+    <a href="mailto:denayzeofficial@gmail.com">denayzeofficial@gmail.com</a>
+    <a href="tel:+380990090865">+380 99 009 08 65</a>
+    <a href="https://t.me/denyskozachenko" target="_blank" rel="noopener">@denyskozachenko</a>
+  </div>
+</footer>
+
+</body>
+</html>
