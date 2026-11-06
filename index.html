@@ -9,7 +9,8 @@
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --paper:#FAF6F0; --paper-raised:#F2ECE2; --ink:#201C18; --ink-soft:#6B6258;
@@ -43,6 +44,12 @@ p{margin:0 0 16px}
 .case h3{color:var(--ink);font-family:var(--serif);font-weight:600;font-size:26px;margin:0}
 .case .role{color:var(--accent);font-size:13px;font-weight:600;white-space:nowrap}
 .case img{width:100%;height:auto;border-radius:4px;display:block;margin:20px 0;border:1px solid var(--line)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.compare figure{margin:0}
+.compare img{margin:0 0 8px}
+.compare figcaption{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:var(--ink-soft)}
+.compare figcaption a{color:var(--accent);font-weight:600}
+@media (max-width:600px){.compare{grid-template-columns:1fr}}
 .stats{display:flex;flex-wrap:wrap;gap:28px 36px;margin:24px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stat strong{display:block;color:var(--ink);font-family:var(--serif);font-size:28px;font-weight:600}
 .stat span{font-size:12.5px;color:var(--ink-soft)}
@@ -101,7 +108,16 @@ footer p{max-width:420px;margin:0 0 32px}
       <h3>Virtuos Dental — стоматологічна клініка, Одеса</h3>
       <span class="role">Повний редизайн · 2026</span>
     </div>
-    <img src="assets/virtuos-case.jpg" alt="Скріншот редизайну сайту Virtuos Dental" width="800" height="826">
+    <div class="compare">
+      <figure>
+        <img src="assets/before-virtuos.jpg" alt="До: оригінальний сайт Virtuos Dental" width="744" height="768">
+        <figcaption>До · <a href="http://virtuosdental.od.ua/" target="_blank" rel="noopener">оригінал ↗</a></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/virtuos-case.jpg" alt="Після: редизайн сайту Virtuos Dental" width="744" height="768">
+        <figcaption>Після · <a href="https://denayze34.github.io/virtuos-dental-redesign/" target="_blank" rel="noopener">демо ↗</a></figcaption>
+      </figure>
+    </div>
     <p>Оригінал — сайт 2016 року без адаптивної верстки. Переніс усі 26 реальних сторінок, включно з 20 статтями про методи лікування, з оригінальними фото та ілюстраціями, звірених з першоджерелом рядок за рядком. Прогнав через Google Lighthouse і знайшов реальні проблеми продуктивності: фото клініки важили в рази більше за розмір показу на екрані — стиснув і прибрав зсуви верстки.</p>
     <div class="stats">
       <div class="stat"><strong>26</strong><span>сторінок, паритет з оригіналом</span></div>
@@ -115,14 +131,22 @@ footer p{max-width:420px;margin:0 0 32px}
       <h3>Холод-ОК — ремонт холодильників, Одеса</h3>
       <span class="role">Повний редизайн · 3 мови сайту</span>
     </div>
-    <img src="assets/holodok-case.jpg" alt="Скріншот редизайну сайту Холод-ОК" width="800" height="729">
+    <div class="compare">
+      <figure>
+        <img src="assets/before-holodok.jpg" alt="До: оригінальний сайт Холод-ОК" width="744" height="768">
+        <figcaption>До · <a href="http://remont-holodilnik.od.ua/" target="_blank" rel="noopener">оригінал ↗</a></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/holodok-case.jpg" alt="Після: редизайн сайту Холод-ОК" width="744" height="678">
+        <figcaption>Після · <a href="https://denayze34.github.io/holod-ok-redesign/" target="_blank" rel="noopener">демо ↗</a></figcaption>
+      </figure>
+    </div>
     <p>Сайт майстерні стояв на WordPress ще з 2017 року. Переробив його в статичний сайт на трьох мовах і звірив з оригіналом кожну сторінку — щоб жодна стаття, форма чи відгук не загубилися при переносі. Додав SEO-розмітку, яку розуміють пошуковики, і прогнав готовий сайт через axe-core: знайшов і поправив три місця з заниженим контрастом тексту та кілька пропущених рівнів заголовків.</p>
     <div class="stats">
       <div class="stat"><strong>3</strong><span>мови (uk/ru/en)</span></div>
       <div class="stat"><strong>156</strong><span>сторінок, 36 статей з паритетом</span></div>
       <div class="stat"><strong>0</strong><span>биті посилання, 0 порушень WCAG AA</span></div>
     </div>
-    <a class="cta" href="https://denayze34.github.io/holod-ok-redesign/" target="_blank" rel="noopener">Живий демо-сайт ↗</a>
   </div>
 
   <div class="case">
@@ -130,14 +154,22 @@ footer p{max-width:420px;margin:0 0 32px}
       <h3>ГрандМастер — натяжні стелі, Одеса</h3>
       <span class="role">Повний редизайн · 10 сторінок</span>
     </div>
-    <img src="assets/grandmaster-case.jpg" alt="Скріншот редизайну сайту ГрандМастер" width="800" height="650">
+    <div class="compare">
+      <figure>
+        <img src="assets/before-grandmaster.jpg" alt="До: оригінальний сайт ГрандМастер" width="744" height="768">
+        <figcaption>До · <a href="http://grandmaster.od.ua/" target="_blank" rel="noopener">оригінал ↗</a></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/grandmaster-case.jpg" alt="Після: редизайн сайту ГрандМастер" width="744" height="604">
+        <figcaption>Після · <a href="https://denayze34.github.io/grandmaster-redesign/" target="_blank" rel="noopener">демо ↗</a></figcaption>
+      </figure>
+    </div>
     <p>Оригінал — верстка приблизно 2008 року, і на різних сторінках там вказано три різні ціни за м². Не став тихо обирати одну — переніс усі три в редизайн, з поміткою, яку саме уточнювати у замірника. Решта контенту так само реальна: прайс-лист, п'ять відгуків дослівно, акції, контакти з позначкою про можливе перейменування вулиці, справжній логотип компанії.</p>
     <div class="stats">
       <div class="stat"><strong>10</strong><span>реальних сторінок оригіналу</span></div>
       <div class="stat"><strong>0</strong><span>порушень WCAG AA, усі сторінки</span></div>
       <div class="stat"><strong>3→0</strong><span>цінових розбіжності — розкрито, не приховано</span></div>
     </div>
-    <a class="cta" href="https://denayze34.github.io/grandmaster-redesign/" target="_blank" rel="noopener">Живий демо-сайт ↗</a>
   </div>
 </section>
 
